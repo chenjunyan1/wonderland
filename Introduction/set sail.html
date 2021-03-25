@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderland</title>
+    <link rel="shortcut icon " type="images/x-icon" href="img/qq.jpg">
+
+</head>
+<style>
+    body {
+        background: #FF8C00;
+        /* font-size: 12px; */
+        transition: 3s;
+        margin: 15px;
+    }
+    
+    #daohang {
+        width: 80px;
+        height: 25px;
+        background-color: yellowgreen;
+        text-align: center;
+        border-radius: 20px;
+    }
+    
+    .daohanglan {
+        text-decoration: none;
+        color: #00FFFF;
+        font-family: "Times New Roman", Georgia, Serif;
+    }
+    
+    .biaoti {
+        background-color: yellowgreen;
+        color: #00FFFF;
+        font-family: "Times New Roman", Georgia, Serif;
+        text-align: center;
+        border-radius: 20px;
+    }
+    
+    #daohang a:hover {
+        color: seagreen;
+    }
+    
+    .haha a:hover {
+        color: blueviolet;
+        /* box-shadow:0px 0px 10px  salmon; */
+    }
+    
+    .tou {
+        word-spacing: 30px;
+        background-color: #00FFFF;
+        ;
+        color: red;
+        font-family: "Times New Roman", Georgia, Serif;
+        border-radius: 30px;
+    }
+    
+    #jieshao {
+        background-color: yellow;
+        color: blueviolet;
+        clear: both;
+        text-align: center;
+        padding: 5px;
+        border-radius: 10px;
+        word-spacing: 10px;
+    }
+    
+    #yuandan {
+        word-spacing: 30px;
+        color: green;
+        font-family: "Times New Roman", Georgia, Serif;
+        border-radius: 30px;
+    }
+    
+    .haha>a {
+        text-decoration: none;
+        font-size: 15px;
+        margin-left: 50px;
+        word-spacing: 20px;
+        color: blueviolet;
+        font-weight: bold;
+    }
+    
+    .tou>h1 {
+        margin-left: 50px;
+    }
+    
+    marquee {
+        font-size: 40px;
+    }
+</style>
+
+<body>
+    <div id="daohang">
+        <a class="daohanglan" href="home.html">主页</a>
+    </div>
+
+
+    <div>
+        <h1 class="biaoti">Wonderland . svg
+            <p id="shijian">TIME</p>
+        </h1>
+        <div class="tou">
+            <h1>Dream set sail</h1>
+        </div>
+    </div>
+    <marquee id="yuandan" behavior="alternate" scrolldelay="800" scrollamount="250"></marquee>
+
+    <!-- SVG1 -->
+
+    <div class="tupian"> <abbr title="  Junyan   is   so   handsome">
+        <embed src="SVG/1.svg" width="100%" 
+        type="image/svg+xml"
+        pluginspage="http://www.adobe.com/svg/viewer/install/" />
+        </abbr>
+    </div>
+
+    <div class="tupian"> <abbr title="  Junyan   is   so   handsome">
+        <embed src="SVG/2.svg" width="100%"  
+        type="image/svg+xml"
+        pluginspage="http://www.adobe.com/svg/viewer/install/" />
+        </abbr>
+    </div>
+    <div class="tupian"> <abbr title="  Junyan   is   so   handsome">
+        <embed src="SVG/3.svg" width="100%"  
+        type="image/svg+xml"
+        pluginspage="http://www.adobe.com/svg/viewer/install/" />
+        </abbr>
+    </div>
+    <div class="tupian"> <abbr title="  Junyan   is   so   handsome">
+        <embed src="SVG/4.svg" width="100%"  
+        type="image/svg+xml"
+        pluginspage="http://www.adobe.com/svg/viewer/install/" />
+        </abbr>
+    </div>
+
+    <div class="tupian"><abbr title="JunyanVery handsome!">
+        <embed src="SVG/5.svg" width="100%" 
+        type="image/svg+xml"
+        pluginspage="http://www.adobe.com/svg/viewer/install/" />
+        </abbr>
+    </div>
+
+    <div id="jieshao">
+        hi .i m JunYanChen
+        <p id="shijiancha"></p>
+        <p id="shijiancha2"></p>
+    </div>
+
+    <div id="ha" class="haha" style="text-align:center ">
+        <a href="https://baike.baidu.com/item/%E4%B8%87%E7%81%B5%E8%8A%82/58611?from=kg_qa"> 发布时间 2020 11.2 </a>
+        <a href="http://kidolab.cn/">实务学堂 </a>
+        <a href="https://user.qzone.qq.com/2562178620/main">Wonderlander </a>
+        <a href="tencent://message/?uin=2562178620&Menu=yes& Service=300&sigT=42a1e5347953b64c5ff3980f8a6e644d4b31456cb0b6ac6b27663a3c4dd0f4aa14a543b1716f9d45">与Ta聊天</a>
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=2562178620">加好友 </a>
+        <a href="https://mail.qq.com/">邮箱：2562178620@qq.com</a>
+        <!-- <a href="mailto:2562178620@qq.com">邮箱:2562178620@qq.com </a> -->
+    </div>
+</body>
+
+</html>
+<script>
+    setInterval(gengxin, 1000);
+    jisuan();
+    setInterval(sheyu(), 1000);
+    //以下函数
+    function gengxin() {
+
+        var d = new Date();
+        let c = d.getHours(); //小时
+        let f = d.getMinutes(); //分钟
+        let e = d.getSeconds(); //秒   
+
+        c = add(c);
+        f = add(f);
+        e = add(e);
+
+        if (d.getHours() < 5) {
+            document.body.style.backgroundColor = '#000000';
+            document.getElementById("ha").style.color = '#D8BFD8';
+            document.getElementById("yuandan").style.color = 'red';
+            document.getElementById("shijian").innerHTML = "Pay attention to your body and go to bed early：☽" + c + ":" + f + ":" + e + "-Dark mode";
+        } else if (d.getHours() >= 5 && d.getHours() < 10) {
+            document.getElementById("shijian").innerHTML = "HI.good morning：☼" + c + ":" + f + ":" + e;
+        } else if (d.getHours() >= 10 && d.getHours() < 14) {
+            document.getElementById("shijian").innerHTML = "Good noon：☀" + c + ":" + f + ":" + e;
+        } else if (d.getHours() >= 14 && d.getHours() < 20) {
+            document.getElementById("shijian").innerHTML = "Good afternoon：☁" + c + ":" + f + ":" + e;
+        } else if (d.getHours() >= 20 && d.getHours() <= 24) {
+            document.body.style.backgroundColor = '#000000';
+            document.getElementById("ha").style.color = '#D8BFD8';
+            document.getElementById("yuandan").style.color = 'red';
+            document.getElementById("shijian").innerHTML = "Pay attention to your body and go to bed early：☽" + c + ":" + f + ":" + e + "-Dark mode";
+        }
+    }
+
+    function add(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+
+    //判断之前之后
+    function jisuan() {
+        var today, someday, text;
+        today = new Date();
+        someday = new Date();
+        someday.setFullYear(2021, 0, 0);
+
+        // let a = today.getFullYear();
+        // let b = today.getMonth();
+        // let c = today.getDay();
+        // today.setFullYear();
+        if (someday > today) {
+            text = "快元旦了哦！你猜我怎么知道的";
+        } else if (someday < today) {
+            text = "快要到春节啦！";
+        } else {
+            text = "2021年快乐！！！";
+        }
+        document.getElementById("yuandan").innerHTML = text;
+
+    }
+    //获取某个月有多少天
+    function getDays(year, month) {
+        month -= 1;
+        let days = [31, 28, 31, 30, 31, 30, 31, 30, 30, 31, 30, 31]
+        if ((year % 4 === 0) && (year % 100 !== 0 || year % 400 === 0)) {
+            days[1] = 29
+        }
+        return days[month]
+    }
+    //计算到放假还有多少天
+    function sheyu() {
+        let Festival_dates = 23; //节日是几号23寒假
+        let Festival_dates1 = 11; //除夕是11号
+        // let jieriDate = [[1,23],[2,11][2,12][2,26][5,1]];//所有的节日
+        let Festival0 = getDays(2021, 1) - (getDays(2021, 1) - Festival_dates); //计算放假的日子01.23
+        let Festival1 = getDays(2021, 2) - (getDays(2021, 2) - Festival_dates1); //除夕是02.11
+        //计算除夕的日子02.11
+        today = new Date();
+        let b = today.getMonth() + 1; //今月分
+        let c = today.getDate(); //今天天
+        //以下是计算还有多少天
+        let d; //存寒假天数
+        let h; //存除夕天数
+        if (b == 1 && c < Festival0) {
+            d = Festival0 - c;
+            h = getDays(2021, 1) - c + Festival1;
+        } else if (b == 2 && c < Festival1) {
+            d = 0;
+            h = Festival1 - c;
+        }
+
+        document.getElementById("shijiancha").innerHTML = "There are still" + d + "days to go before winter vacation . ";
+        document.getElementById("shijiancha2").innerHTML = "It's " + h + " days before New Year's Eve .";
+
+
+    }
+</script>

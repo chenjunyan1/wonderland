@@ -1,0 +1,75 @@
+.home {
+    width: 90px;
+    color: aqua;
+    text-decoration: none;
+    position: absolute;
+    left: 20px;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+body {
+    background-color: darksalmon;
+}
+
+.tu {
+    position: absolute;
+    top: 228px;
+    left: 278px;
+}
+
+.img1 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    animation: donghua 5s 0;
+}
+
+.img2 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    animation: donghua2 5s 0;
+}
+
+.img3 {
+    position: absolute;
+    top: 100px;
+    left: 548px;
+    animation: donghua3 5s 0;
+}
+
+.img4 {
+    position: absolute;
+    top: 100px;
+    left: 658px;
+    animation: donghua4 5s 0;
+}
+
+.img5 {
+    position: absolute;
+    top: 592px;
+    left: 100px;
+    animation: donghua5 5s 0;
+}
+
+.img6 {
+    position: absolute;
+    top: 592px;
+    left: 200px;
+    animation: donghua6 5s 0;
+}
+
+.img7 {
+    position: absolute;
+    top: 592px;
+    left: 548px;
+    animation: donghua7 5s 0;
+}
+
+.img8 {
+    position: absolute;
+    top: 592px;
+    left: 658px;
+    animation: donghua8 5s 0;
+}

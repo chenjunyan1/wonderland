@@ -1,0 +1,134 @@
+body {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    background-color: salmon;
+    animation: donghua 20s infinite;
+}
+
+a {
+    border-radius: 15px;
+    background-color: aliceblue;
+    color: black;
+    letter-spacing: 10px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+@-webkit-keyframes donghua {
+    0% {
+        background-color: red;
+    }
+    10% {
+        background-color: aquamarine;
+    }
+    20% {
+        background-color: aqua;
+    }
+    30% {
+        background-color: yellow;
+    }
+    40% {
+        background-color: yellowgreen;
+    }
+    50% {
+        background-color: violet;
+    }
+    60% {
+        background-color: thistle;
+    }
+    70% {
+        background-color: teal;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    border: yellowgreen 30px solid;
+    color: aqua;
+}
+
+#tupian {
+    width: 100%;
+    margin-top: 200px;
+    text-align: center;
+}
+
+img {
+    animation: img1 10s 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes img1 {
+    0% {
+        border-top-left-radius: 10%;
+        /* transform: scale(1.0, 1.0); */
+    }
+    6% {
+        border-top-left-radius: 100%;
+    }
+    12% {
+        border-bottom-left-radius: 10%;
+    }
+    18% {
+        border-bottom-left-radius: 100%;
+    }
+    24% {
+        border-bottom-right-radius: 10%;
+    }
+    30% {
+        border-bottom-right-radius: 100%;
+    }
+    36% {
+        border-top-right-radius: 10%;
+    }
+    42% {
+        border-radius: 100%;
+    }
+    48% {
+        border-top-right-radius: 100%;
+    }
+    50% {
+        border-top-right-radius: 10%;
+    }
+    54% {
+        border-top-left-radius: 100%;
+    }
+    58% {
+        border-top-left-radius: 10%;
+    }
+    64% {
+        border-bottom-left-radius: 100%;
+    }
+    68% {
+        border-bottom-left-radius: 10%;
+    }
+    72% {
+        border-bottom-right-radius: 100%;
+    }
+    76% {
+        border-bottom-right-radius: 10%;
+        width: 428px;
+        height: 285px;
+    }
+    80% {
+        -webkit-transform: rotate(720deg);
+        transform: rotate(720deg);
+        width: 1248px;
+        height: 855px;
+    }
+    94% {
+        -webkit-transform: rotate(720deg);
+        transform: rotate(720deg);
+        width: 428px;
+        height: 285px;
+    }
+    100% {
+        -webkit-transform: rotate(720deg);
+        transform: rotate(720deg);
+        width: 1284px;
+        height: 855px;
+        border-radius: 25px;
+    }
+}

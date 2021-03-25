@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link rel="shortcut icon " type="images/x-icon" href="img/qq.jpg">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: wheat;
+            margin: 20px;
+        }
+
+        .Photography img {
+            border: 10px solid blueviolet;
+            width: 500px;
+            height: 230px;
+            position: relative;
+            animation: tupian 17s 1;
+            /* animation: tupian2 5s 1 ; */
+
+        }
+
+        .Photography {
+            text-align: center;
+        }
+
+        .lanqiu {
+            border-radius: 10px;
+            margin: 25px;
+            padding: 10px;
+            opacity: 0.5;
+            border-radius: 10px;
+            transition: transform, 3s;
+            /* box-shadow:0px 10px 5px blueviolet; */
+        }
+
+        .Photography img:hover {
+            opacity: 1;
+            /* margin: 0px 100px 0px 100px; */
+            /* transform: scale(1.2, 1.2); */
+        }
+
+        @keyframes tupian {
+            0% {
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                opacity: 0;
+
+            }
+
+            75% {
+                width: 1000px;
+                height: 460px;
+                border-radius: 0%;
+                opacity: 0.5;
+            }
+
+            95% {
+                width: 400px;
+                height: 130px;
+                opacity: 0.5;
+
+            }
+
+            100% {
+                width: 500px;
+                height: 230px;
+                opacity: 1;
+
+            }
+        }
+
+        @keyframes tupian2 {
+
+            100% {
+                width: 1000px;
+                height: 460px;
+                opacity: 1;
+                /* transform: scale(1.2, 1.2); */
+                /* animation-play-state:unset; */
+            }
+        }
+
+        .biaoti {
+            text-decoration: none;
+            font-size: 30px;
+            margin: 20px;
+            color: red;
+        }
+    </style>
+    <a class="biaoti" href="home.html">&#127936; Basketball</a>
+    <div class="Photography">
+        <img class="lanqiu" src="img/lanqiu/1.jpg" alt="实务学堂">
+        <img class="lanqiu" src="img/lanqiu/2.jpg" alt="实务学堂">
+        <img class="lanqiu" src="img/lanqiu/3.jpg" alt="实务学堂">
+        <img class="lanqiu" src="img/lanqiu/4.jpg" alt="实务学堂">
+        <img class="lanqiu" src="img/lanqiu/5.jpg" alt="实务学堂">
+        <img class="lanqiu" src="img/lanqiu/6.jpg" alt="实务学堂">
+        <img class="lanqiu" src="img/lanqiu/7.jpg" alt="实务学堂">
+        <img class="lanqiu" src="img/lanqiu/8.jpg" alt="实务学堂">
+    </div>
+
+    <script>
+        let imglanqiu = document.querySelectorAll('.lanqiu');
+        // let shuzu = ["1","2","3","4","5","6","7","8"];
+        for (let i = 0; i < imglanqiu.length; i++) {
+            imglanqiu[i].addEventListener('click', () => {
+                //给图片增加事件侦听器，侦听click事件,当点击事件发生时，就执行=>
+                // event.target.style.transform = "scale(1.2,1.2)"
+
+                for (let g = 0; g < imglanqiu.length; g++) {
+                    imglanqiu[g].style.transform = "scale(0.8,0.8)";
+                    imglanqiu[g].style.opacity = "0.5";
+
+                }
+                //如果图片宽度是600就变成0.8倍否则就变大；
+
+                // imglanqiu[i].style.animation = "tupian2 3s 1 forwards";
+                event.target.style.transform = "scale(1.2,1.2)";
+                imglanqiu[i].style.opacity = "1";
+                //当箭头函数被执行时，该函数有一个输入参数event，event.target指向引发这个响应的元素
+            });
+        }
+
+    </script>
+</body>
+
+</html>

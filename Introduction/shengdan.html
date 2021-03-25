@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> <a href="home.html"> Merry Christmas.</a> </h1>
+
+    <a class="you" ><img src="shengdan/svg/圣诞老人.svg" alt=""></a>
+
+    <div id="biaoti">
+        <a class="zuo shan" ><img src="shengdan/svg/星星.svg" alt=""></a>
+        <a class="zuo shan" ><img src="shengdan/svg/星星.svg" alt=""></a>
+        <a class="zuo shan" ><img src="shengdan/svg/星星.svg" alt=""></a>
+        <a class="zuo shan" ><img src="shengdan/svg/星星.svg" alt=""></a>
+        <a class="zuo shan" ><img src="shengdan/svg/星星.svg" alt=""></a>
+        <a class="zuo shan2" class="shan" ><img src="shengdan/svg/星星.svg" alt=""></a>
+        <a class="zuo shan2" ><img src="shengdan/svg/星星.svg" alt=""></a>
+        <a class="zuo shan2" ><img src="shengdan/svg/星星.svg" alt=""></a>
+        <a class="zuo shan2" ><img src="shengdan/svg/星星.svg" alt=""></a>
+        <a class="zuo shan2" ><img src="shengdan/svg/星星.svg" alt=""></a>
+        <a class="zuo shan2" ><img src="shengdan/svg/星星.svg" alt=""></a>
+        <a class="zuo shan2" ><img src="shengdan/svg/星星.svg" alt=""></a>
+        <a class="zuo" ><img src="shengdan/svg/星星.svg" alt=""></a>
+        <a class="zuo" ><img src="shengdan/svg/星星.svg" alt=""></a>
+        <a class="zuo" ><img src="shengdan/svg/星星.svg" alt=""></a>
+        <a class="zuo" ><img src="shengdan/svg/星星.svg" alt=""></a>
+    </div>
+    <a class="juzhong"><img src="shengdan/svg/圣诞树.svg" alt=""></a>
+
+    <div id="shengdan">
+        <img src="shengdan/svg/merry.svg" alt="">
+    </div>
+    <style>
+        .juzhong {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        body {
+            margin: 0;
+            background-color: blueviolet;
+        }
+
+        #biaoti {
+            width: 100%;
+            display: flex;
+            justify-content:center;
+        }
+
+        #shengdan>* {
+            width: 100%;
+        }
+
+        .you {
+            position: fixed;
+            top: 30px;
+            right: 20px;
+            animation: yidong 5s infinite;
+        }
+        .you>*{
+            width: 100px;
+        }
+
+
+        .zuo {
+           margin: 10px 10px;
+            animation: zuo 5s infinite;
+
+        }
+        .zuo>*{
+            width: 40px;
+
+        }
+
+        /* css动画 */
+        @-webkit-keyframes zuo {
+
+            50% {
+
+                transform: perspective(400px) rotateY(180deg);
+            }
+
+            100% {
+                transform: perspective(400px) rotateY(0deg);
+            }
+        }
+
+        @-webkit-keyframes yidong {
+
+            0% {
+                top: 3px;
+            }
+            25%{
+                top: 180px;
+            }
+
+            50% {
+                top: 360px;
+            }
+
+            75% {
+                top: 490px;
+            }
+
+            100% {
+                top: 30px;
+            }
+        }
+
+        /* 响应式 */
+        @media screen and (max-width: 957px) {
+            .shan{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 758px) {
+             .shan2 {
+                display: none;
+            } 
+            
+            .juzhong>*{
+                width: 150px;
+                height: 75px;
+                display: flex;
+                justify-content: center;
+            }
+            .you>*{
+
+                width: 50px;
+                right: 60px;
+            }
+
+        }
+    </style>
+
+
+
+</body>
+
+</html>
